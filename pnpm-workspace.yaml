@@ -1,0 +1,8 @@
+packages:
+  - client
+  - server
+
+allowBuilds:
+  '@nestjs/core': true
+  sharp: true
+  unrs-resolver: true
