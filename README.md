@@ -1,16 +1,64 @@
-# React + Vite
+# Banana Clicker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Banana Clicker is an addictive incremental game where every click brings you closer to building the ultimate banana empire.
 
-Currently, two official plugins are available:
+## Table of Contents
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Running the Application](#running-the-application)
+- [Project Structure](#project-structure)
+- [Tech Stack](#tech-stack)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Prerequisites
 
-## React Compiler
+- **Node.js** (v16+ recommended)
+- **pnpm**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Installation
 
-## Expanding the ESLint configuration
+1. Clone the repository and navigate to the project root
+2. Install all dependencies:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+pnpm install
+```
+
+## Configuration
+
+Create a `.env` file:
+
+- Server `.env` (`BananaClicker/server/.env`): used for backend settings such as database connection and ports.
+
+Populate the file using your team's shared configuration.
+
+## Running the Application
+
+### Start Everything (FrontEnd + BackEnd)
+```bash
+pnpm run dev
+```
+The localhost links will be displayed in the terminal.
+
+### Start Only FrontEnd
+```bash
+pnpm run client
+```
+
+### Start Only BackEnd
+```bash
+pnpm run server
+```
+
+## Project Structure
+
+```
+Ofaie/
+├── client/        # Next.js frontend application
+└── server/        # NestJS backend application
+```
+
+## Tech Stack
+
+- **Frontend:** Next.js, React
+- **Backend:** NestJS
