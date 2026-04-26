@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+
+}
+
+@theme inline {
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+  }
+}
+
+@layer base {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
